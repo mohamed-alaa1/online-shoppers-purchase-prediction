@@ -5,7 +5,9 @@ Project 6: E-Commerce Purchase Prediction and Behavior Mining.
 
 We use the UCI Online Shoppers Purchasing Intention dataset to predict if a browsing session ends with a purchase, and K-Means to group sessions by browsing behavior. The trained models are used in a Streamlit app where you can score one session, upload a CSV of sessions, and look at the segments and patterns we found.
 
-Live app: <add link after deploying>
+Live app: https://aiu-online-shoppers.streamlit.app
+
+GitHub: https://github.com/mohamed-alaa1/online-shoppers-purchase-prediction
 
 ## Team
 
