@@ -1,0 +1,377 @@
+{
+  "final_model": "RandomForest",
+  "best_params": {
+    "model__n_estimators": "400",
+    "model__min_samples_leaf": "10",
+    "model__max_features": "0.5",
+    "model__max_depth": "14"
+  },
+  "threshold": 0.6315498544366335,
+  "sklearn_version": "1.8.0",
+  "input_columns": [
+    "Administrative",
+    "Administrative_Duration",
+    "Informational",
+    "Informational_Duration",
+    "ProductRelated",
+    "ProductRelated_Duration",
+    "BounceRates",
+    "ExitRates",
+    "PageValues",
+    "SpecialDay",
+    "Month",
+    "OperatingSystems",
+    "Browser",
+    "Region",
+    "TrafficType",
+    "VisitorType",
+    "Weekend"
+  ],
+  "month_order": [
+    "Feb",
+    "Mar",
+    "May",
+    "June",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ],
+  "categories": {
+    "Month": [
+      "Aug",
+      "Dec",
+      "Feb",
+      "Jul",
+      "June",
+      "Mar",
+      "May",
+      "Nov",
+      "Oct",
+      "Sep"
+    ],
+    "VisitorType": [
+      "New_Visitor",
+      "Other",
+      "Returning_Visitor"
+    ],
+    "OperatingSystems": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "Browser": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "Region": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "TrafficType": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ]
+  },
+  "special_day_values": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "numeric_ranges": {
+    "Administrative": [
+      0.0,
+      27.0
+    ],
+    "Administrative_Duration": [
+      0.0,
+      3398.75
+    ],
+    "Informational": [
+      0.0,
+      24.0
+    ],
+    "Informational_Duration": [
+      0.0,
+      2549.375
+    ],
+    "ProductRelated": [
+      0.0,
+      705.0
+    ],
+    "ProductRelated_Duration": [
+      0.0,
+      63973.52223
+    ],
+    "BounceRates": [
+      0.0,
+      0.2
+    ],
+    "ExitRates": [
+      0.0,
+      0.2
+    ],
+    "PageValues": [
+      0.0,
+      361.7637419
+    ],
+    "SpecialDay": [
+      0.0,
+      1.0
+    ]
+  },
+  "defaults": {
+    "Administrative": 1.0,
+    "Administrative_Duration": 9.0,
+    "Informational": 0.0,
+    "Informational_Duration": 0.0,
+    "ProductRelated": 18.0,
+    "ProductRelated_Duration": 617.0,
+    "BounceRates": 0.002857143,
+    "ExitRates": 0.025,
+    "PageValues": 0.0,
+    "SpecialDay": 0.0,
+    "Month": "May",
+    "VisitorType": "Returning_Visitor",
+    "OperatingSystems": 2,
+    "Browser": 2,
+    "Region": 1,
+    "TrafficType": 2
+  },
+  "buyer_medians": {
+    "Administrative": 2.0,
+    "Administrative_Duration": 49.3,
+    "Informational": 0.0,
+    "Informational_Duration": 0.0,
+    "ProductRelated": 29.0,
+    "ProductRelated_Duration": 1122.915,
+    "BounceRates": 0.0,
+    "ExitRates": 0.0163,
+    "PageValues": 16.3592,
+    "SpecialDay": 0.0
+  },
+  "nonbuyer_medians": {
+    "Administrative": 1.0,
+    "Administrative_Duration": 0.0,
+    "Informational": 0.0,
+    "Informational_Duration": 0.0,
+    "ProductRelated": 16.0,
+    "ProductRelated_Duration": 530.8125,
+    "BounceRates": 0.0038,
+    "ExitRates": 0.0285,
+    "PageValues": 0.0,
+    "SpecialDay": 0.0
+  },
+  "permutation_importance": {
+    "PageValues": 0.54107,
+    "Month": 0.04498,
+    "ExitRates": 0.03731,
+    "BounceRates": 0.02916,
+    "ProductRelated": 0.01925,
+    "Administrative": 0.01757,
+    "ProductRelated_Duration": 0.0062,
+    "Administrative_Duration": 0.00284,
+    "VisitorType": 0.00274,
+    "TrafficType": 0.00093,
+    "Weekend": 0.00051,
+    "SpecialDay": -0.00026,
+    "Region": -0.00031,
+    "Informational": -0.0005,
+    "OperatingSystems": -0.00056,
+    "Informational_Duration": -0.00098,
+    "Browser": -0.00159
+  },
+  "test_metrics": {
+    "Dummy (baseline) @ 0.5": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.156,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.844,
+      "false_alarm_rate": 0.0
+    },
+    "DecisionTree @ 0.5": {
+      "roc_auc": 0.741,
+      "pr_auc": 0.377,
+      "precision": 0.542,
+      "recall": 0.571,
+      "f1": 0.556,
+      "accuracy": 0.857,
+      "false_alarm_rate": 0.089
+    },
+    "LogisticRegression (tuned) @ 0.5": {
+      "roc_auc": 0.928,
+      "pr_auc": 0.69,
+      "precision": 0.562,
+      "recall": 0.817,
+      "f1": 0.666,
+      "accuracy": 0.872,
+      "false_alarm_rate": 0.118
+    },
+    "RandomForest (tuned) @ 0.5": {
+      "roc_auc": 0.933,
+      "pr_auc": 0.742,
+      "precision": 0.583,
+      "recall": 0.791,
+      "f1": 0.671,
+      "accuracy": 0.879,
+      "false_alarm_rate": 0.105
+    },
+    "GradientBoosting (tuned) @ 0.5": {
+      "roc_auc": 0.937,
+      "pr_auc": 0.756,
+      "precision": 0.73,
+      "recall": 0.623,
+      "f1": 0.672,
+      "accuracy": 0.905,
+      "false_alarm_rate": 0.043
+    },
+    "RandomForest (tuned) @ 0.632": {
+      "roc_auc": 0.933,
+      "pr_auc": 0.742,
+      "precision": 0.668,
+      "recall": 0.717,
+      "f1": 0.692,
+      "accuracy": 0.9,
+      "false_alarm_rate": 0.066
+    }
+  },
+  "segments": {
+    "k": 5,
+    "columns": [
+      "Administrative",
+      "Administrative_Duration",
+      "Informational",
+      "Informational_Duration",
+      "ProductRelated",
+      "ProductRelated_Duration",
+      "BounceRates",
+      "ExitRates",
+      "PageValues"
+    ],
+    "names": {
+      "0": "account and product browsing",
+      "1": "one-page bouncers",
+      "2": "long research sessions",
+      "3": "short product browsing",
+      "4": "high page value"
+    },
+    "sessions": {
+      "0": 2548,
+      "1": 624,
+      "2": 1702,
+      "3": 3631,
+      "4": 1259
+    },
+    "conversion": {
+      "0": 0.0675,
+      "1": 0.0048,
+      "2": 0.2274,
+      "3": 0.0358,
+      "4": 0.6624
+    },
+    "profile": {
+      "0": {
+        "Administrative": 3.0,
+        "Administrative_Duration": 79.35,
+        "Informational": 0.0,
+        "Informational_Duration": 0.0,
+        "ProductRelated": 21.0,
+        "ProductRelated_Duration": 659.786,
+        "BounceRates": 0.0,
+        "ExitRates": 0.019,
+        "PageValues": 0.0
+      },
+      "1": {
+        "Administrative": 0.0,
+        "Administrative_Duration": 0.0,
+        "Informational": 0.0,
+        "Informational_Duration": 0.0,
+        "ProductRelated": 1.0,
+        "ProductRelated_Duration": 0.0,
+        "BounceRates": 0.2,
+        "ExitRates": 0.2,
+        "PageValues": 0.0
+      },
+      "2": {
+        "Administrative": 4.0,
+        "Administrative_Duration": 114.875,
+        "Informational": 2.0,
+        "Informational_Duration": 92.0,
+        "ProductRelated": 45.0,
+        "ProductRelated_Duration": 1714.824,
+        "BounceRates": 0.004,
+        "ExitRates": 0.019,
+        "PageValues": 0.0
+      },
+      "3": {
+        "Administrative": 0.0,
+        "Administrative_Duration": 0.0,
+        "Informational": 0.0,
+        "Informational_Duration": 0.0,
+        "ProductRelated": 11.0,
+        "ProductRelated_Duration": 334.75,
+        "BounceRates": 0.0,
+        "ExitRates": 0.039,
+        "PageValues": 0.0
+      },
+      "4": {
+        "Administrative": 2.0,
+        "Administrative_Duration": 47.071,
+        "Informational": 0.0,
+        "Informational_Duration": 0.0,
+        "ProductRelated": 28.0,
+        "ProductRelated_Duration": 1059.575,
+        "BounceRates": 0.0,
+        "ExitRates": 0.016,
+        "PageValues": 24.131
+      }
+    }
+  }
+}

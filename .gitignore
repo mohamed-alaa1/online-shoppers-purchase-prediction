@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+AGENTS.md
+team_notes/
+*.pyc
+~$*
